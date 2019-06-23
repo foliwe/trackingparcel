@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shipment: one
+  location: MyString
+  status: MyString
+  remarks: MyText
+
+two:
+  shipment: two
+  location: MyString
+  status: MyString
+  remarks: MyText

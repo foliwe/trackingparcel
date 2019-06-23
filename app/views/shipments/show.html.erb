@@ -1,0 +1,88 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Track number:</strong>
+  <%= @shipment.track_number %>
+</p>
+
+<p>
+  <strong>Shipper address:</strong>
+  <%= @shipment.shipper_address %>
+</p>
+
+<p>
+  <strong>Reciever address:</strong>
+  <%= @shipment.reciever_address %>
+</p>
+
+<p>
+  <strong>Carrier reference number:</strong>
+  <%= @shipment.carrier_reference_number %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @shipment.product %>
+</p>
+
+<p>
+  <strong>Total freight:</strong>
+  <%= @shipment.total_freight %>
+</p>
+
+<p>
+  <strong>Pick up time:</strong>
+  <%= @shipment.pick_up_time %>
+</p>
+
+<p>
+  <strong>Expected delivery date:</strong>
+  <%= @shipment.expected_delivery_date %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @shipment.comments %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @shipment.status %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @shipment.weight %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @shipment.quantity %>
+</p>
+
+<hr>
+  
+<h3>Shipment History</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date and Time</th>
+      <th>Location</th>
+      <th>Status</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shipment.shipment_histories.each do |history| %>
+      <tr>
+        <td><%= history.created_at %></td>
+        <td><%= history.location %></td>
+        <td><%= history.status %></td>
+        <td><%= history.remarks %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

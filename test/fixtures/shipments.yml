@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  track_number: MyString
+  shipper_address: MyText
+  reciever_address: MyText
+  carrier_reference_number: MyString
+  product: MyText
+  total_freight: MyString
+  pick_up_time: 2019-06-24 01:52:00
+  expected_delivery_date: 2019-06-24 01:52:00
+  comments: MyText
+  status: MyString
+  weight: MyString
+  quantity: MyString
+
+two:
+  track_number: MyString
+  shipper_address: MyText
+  reciever_address: MyText
+  carrier_reference_number: MyString
+  product: MyText
+  total_freight: MyString
+  pick_up_time: 2019-06-24 01:52:00
+  expected_delivery_date: 2019-06-24 01:52:00
+  comments: MyText
+  status: MyString
+  weight: MyString
+  quantity: MyString

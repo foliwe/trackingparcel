@@ -1,0 +1,77 @@
+<%= form_with(model: shipment, local: true) do |form| %>
+  <% if shipment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shipment.errors.count, "error") %> prohibited this shipment from being saved:</h2>
+
+      <ul>
+      <% shipment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :track_number %>
+    <%= form.text_field :track_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shipper_address %>
+    <%= form.text_area :shipper_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reciever_address %>
+    <%= form.text_area :reciever_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :carrier_reference_number %>
+    <%= form.text_field :carrier_reference_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product %>
+    <%= form.text_area :product %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_freight %>
+    <%= form.text_field :total_freight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pick_up_time %>
+    <%= form.datetime_select :pick_up_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expected_delivery_date %>
+    <%= form.datetime_select :expected_delivery_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_area :comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.text_field :quantity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
