@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_25_205636) do
+ActiveRecord::Schema.define(version: 2019_06_29_140451) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,11 @@ ActiveRecord::Schema.define(version: 2019_06_25_205636) do
     t.datetime "updated_at", null: false
     t.string "contact_email"
     t.string "contact_number"
+    t.string "origin"
+    t.string "carrier"
+    t.string "type_of_shipment"
+    t.datetime "departure_time"
+    t.string "destination"
   end
 
   add_foreign_key "shipment_histories", "shipments"
