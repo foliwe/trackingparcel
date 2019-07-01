@@ -23,4 +23,16 @@ ActiveAdmin.register Shipment do
     end
     f.actions
   end
+
+  index do
+    column :id
+    column :track_number
+    column :status
+    column :carrier_reference_number
+    column :product
+    column :contact_number
+    column :contact_email
+    column :origin
+    column :destination
+  end
 end
