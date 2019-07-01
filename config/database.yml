@@ -7,8 +7,8 @@
 default: &default
   adapter: postgresql
   host: localhost
-  username: postgres
-  password: root
+  username: sassltd
+  password: 1882
   pool: 5
   timeout: 5000
   port: 5432
