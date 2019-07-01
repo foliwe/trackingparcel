@@ -3,7 +3,8 @@ class Shipment < ApplicationRecord
 	before_create :create_track_number
 
 	def create_track_number
-		self.track_number = rand.to_s[2..11] 
+		time = Time.new
+		self.track_number ||= 'TKCD' + time.strftime("%m%d%S").to_s + rand(1000..3000).to_s #rand.to_s[2..11] 
 	end
 
 	after_save :send_email

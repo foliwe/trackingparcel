@@ -34,5 +34,6 @@ ActiveAdmin.register Shipment do
     column :contact_email
     column :origin
     column :destination
+    actions
   end
 end
