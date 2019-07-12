@@ -1,33 +1,78 @@
+<div class="container-fliud">
+  <section class="container">
+      <div class="bread">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+              <%= link_to 'Home',root_path, class:'breadcrumb-item'%>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+      </div>
 
+      <p> <h1>Track Your Shipment Here</h1></p>
 
-<div class="misc-wrapper">
-    <div class="misc-content">
-        <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-md-4 col-xs-12">
-                    <div class="misc-header text-center" style="color:white">
-                      <%= flash[:notice] %>
-                    </div>
-                    <div class="misc-box">
+        <div class="">
+         <p>Our shipment tracking system enables you to monitor the location and status of your consignment. Here you will find shipment details including vessel/flight, container number/air waybill number, estimated date of arrival at destination port/airport and contact details of our local representative. </p>
+        </div>
 
-                      <%= form_tag search_path, :controller => 'shipments', :action => 'show', :method => 'get',:class=>"pull-right" do %>
-                        
-
-                        <div class="form-group">
-                            <label>Enter Your Track Number</label><br />
-                            <div class="group-icon">
-                              <%= text_field_tag :track_number, "", class: 'form-control',placeholder: "Enter Your Track Number" %>
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                          <%= submit_tag 'Search',:class=>"btn btn-block btn-primary btn-rounded box-shadow"%>
-                        </div>
-
-                      <% end %>
-                    </div>
-                   
+         <div class="form">
+             <div class="misc-header text-center" style="color:white">
+                  <%= flash[:notice] %>
+              </div>
+             <%= form_tag search_path, :controller => 'shipments', :action => 'show', :method => 'get' do %>
+          <div class="">
+            <div class="form-group">
+                <label>Enter Your Track Number</label><br />
+                <div class="group-icon">
+                  <%= text_field_tag :track_number, "", class: 'form-control',placeholder: "Enter Your Track Number" %>
                 </div>
             </div>
-        </div>
+          </div>
+          <div class="">
+            <div class="">
+              <%= submit_tag 'Search',:class=>"btn btn-block btn-primary btn-rounded box-shadow"%>
+            </div>
+          </div>
+           <% end %>
+         </div>
+
+  </section >
+
+  <section class="lookfor_section p-4">
+    <div class="container">
+      <h4>Looking for?</h4>
+   
+
+    <div class=" row lookfor_box">
+      <div class="col-sm">
+        <ul class="">
+          <li class="">Cras justo odio</li>
+          <li class="">Dapibus ac facilisis in</li>
+          <li class="">Morbi leo risus</li>
+        </ul>
+      </div>
+      <div class="col-sm">
+        <ul class="">
+          <li class="">Cras justo odio</li>
+          <li class="">Dapibus ac facilisis in</li>
+          <li class="">Morbi leo risus</li>
+        </ul>
+      </div>
+      <div class="col-sm">
+        <ul class="">
+          <li class="">Cras justo odio</li>
+          <li class="">Dapibus ac facilisis in</li>
+          <li class="">Morbi leo risus</li>
+        </ul>
+      </div>
+      <div class="col-sm">
+        <ul class="">
+          <li class="">Cras justo odio</li>
+          <li class="">Dapibus ac facilisis in</li>
+          <li class="">Morbi leo risus</li>
+        </ul>
+      </div>    
     </div>
+  </section>
+
 </div>
