@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   #resources :shipments, only: [:index,:show]
   root 'home#index'
-  get 'shipments/index'
+  get 'tracking' => 'shipments#index'
   get 'search' => 'shipments#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

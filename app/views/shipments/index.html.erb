@@ -9,12 +9,12 @@
           </nav>
       </div>
 
-      <p> <h1>Track Your Shipment Here</h1></p>
+      <p> <h1 class='huge_title'>Track Your Shipment Here</h1></p>
 
         <div class="">
          <p>Our shipment tracking system enables you to monitor the location and status of your consignment. Here you will find shipment details including vessel/flight, container number/air waybill number, estimated date of arrival at destination port/airport and contact details of our local representative. </p>
         </div>
-
+  <section class="form">
          <div class="form">
              <div class="misc-header text-center" style="color:white">
                   <%= flash[:notice] %>
@@ -28,13 +28,17 @@
                 </div>
             </div>
           </div>
-          <div class="">
-            <div class="">
-              <%= submit_tag 'Search',:class=>"btn btn-block btn-primary btn-rounded box-shadow"%>
-            </div>
+          <div class="submit_buttons">
+              <div class="">
+                <%= submit_tag 'Track Parcel',:class=>"btn btn-block btn-primary btn-rounded box-shadow"%>
+              </div>
+              <div class="reset_form">
+                <button type="button" class="btn btn-block btn-warning btn-rounded box-shadow" id="reset_form">Reset</button>
+              </div>
           </div>
            <% end %>
-         </div>
+         </div>  
+  </section>
 
   </section >
 
@@ -51,14 +55,14 @@
           <li class="">Morbi leo risus</li>
         </ul>
       </div>
-      <div class="col-sm">
+      <div class="col-sm-5">
         <ul class="">
           <li class="">Cras justo odio</li>
           <li class="">Dapibus ac facilisis in</li>
           <li class="">Morbi leo risus</li>
         </ul>
       </div>
-      <div class="col-sm">
+      <div class="col-sm-7">
         <ul class="">
           <li class="">Cras justo odio</li>
           <li class="">Dapibus ac facilisis in</li>
@@ -76,3 +80,8 @@
   </section>
 
 </div>
+<script>
+  (#reset_form).click(function{
+    
+  })
+</script>

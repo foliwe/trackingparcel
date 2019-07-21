@@ -8,6 +8,7 @@
 }
 
 body {
+  font-size: 1em;
   position: relative;
   height: 100%;
   color: #5a5a5a;
@@ -31,6 +32,21 @@ body {
     right: 348px;
   }
 
+
+  h1.huge_title{
+    font-size: 400%;
+    font-weight: 600;
+    margin: 40px 0;
+
+  }
+
+  .submit_buttons{
+    display: flex;
+   .submit_buttons{
+     padding-left: 10px;
+     margin-left: 3px;
+   }
+  }
   /*Footer 
   ------------------------------------*/
 
@@ -45,9 +61,7 @@ body {
     display: grid;
     grid-template-columns: 4fr 2fr;
     grid-template-rows: auto;
-   div{
-     
-   }
+   
   }
 
   .tab_contents{
@@ -58,7 +72,16 @@ body {
   margin: auto;
  
 }
-
+ spacer{
+   margin: 20px 0;
+   padding: 20px 0;
+ }
+ .big{
+   padding: 30px;
+ }
+ .small_spacer{
+  padding: 10px 0;
+}
 
   /* carousel
   ---------------------------------------------------*/
@@ -77,8 +100,12 @@ body {
   /*SECTIONS 
   ---------------------------------------------------*/
     section{
-    padding: 20px 0;
-      margin: 50px 0;
+    padding: 60px 0;
+     
+    }
+
+    section.five{
+      background-color: rgba(49, 112, 230, 0.63);
     }
   /* LIST SYTLES
   ---------------------------------------------------*/
@@ -163,5 +190,50 @@ img{
     letter-spacing: -.05rem;
   }
   
+.review{
+  display: flex;
+  justify-content: center;
+}
   
-  
+.reviews_section{
+  background-color: rgb(218, 224, 224)
+}
+.slider_item{
+  display: flex;
+}
+
+section.online{
+  background-image: linear-gradient(154deg,#00894d 0%,#05a56b 3%,#008965 100%);
+  color: #fff;
+}
+
+.view_track{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* PADDINGS -----------------------------
+*/
+
+.my_padding{
+  padding: 50px;
+}
+
+
+.p_right{
+  padding-right: 80px;
+}
+
+.p_left{
+  padding-left: 80px;
+}
+
+.marks{
+  margin: 15px 0;
+}
+
+/*======================================
+ICONS */
+span.icon{
+  padding-right: 8px;
+}
