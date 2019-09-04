@@ -1,17 +1,6 @@
 <div class="one">
 
-  <div class="quote_box">
-      <div class="card d-none d-lg-block" style="width: 20rem;">
-        <div class="card-header">
-          Featured
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-      </div>
-  </div>
+  <%= render 'shared/quote_box'%>
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,7 +21,7 @@
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
         <div class="container">
-          <div class="carousel-caption">
+          <div class="carousel-caption text-left">
             <h1>Another example headline.</h1>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
@@ -42,7 +31,7 @@
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
         <div class="container">
-          <div class="carousel-caption text-right">
+          <div class="carousel-caption text-left">
             <h1>One more for good measure.</h1>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -89,12 +78,12 @@
 <section class="two">
   <div class="container">
       <div class="row my_padding">
-          <div class="col-sm col-md-12">
+          <div class="col-sm-12 col-md-5">
              <h4 class="col_header">Lorem, ipsum dolor sit amet consectetur .</h4> 
               <p class="col_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quia dolorem deserunt deleniti nostrum adipisci optio voluptatem. Distinctio nemo ipsam velit praesentium consequuntur, illum a id voluptatum! Similique, minima eveniet!Illo consequuntur molestias facere sunt ipsa perspiciatis. Quam alias perspiciatis harum suscipit vero. Maxime delectus a quia rerum molestiae, nam libero quod qui sequi rem laudantium ipsum voluptas facere commodi.</p>
                <p> <button type="button" class="btn btn-warning">Warning</button></p>
           </div>
-          <div class="col-sm col-md-12">
+          <div class="col-sm-12 col-md-7">
             <div class="card_wrapper">
                 <div class="card">
                    <img src="https://via.placeholder.com/100x100" alt="" srcset="">
@@ -222,108 +211,9 @@
     </div>
 </div>
 </section>
- <section class="reviews_section">
-    <div class="container">
-        <div class="row">
-          <div class="col-12 ">
-           <div class="text-center">
-             <p>  
-             
-             <h2 class="title">Reviews</h2>
-             </p>
-          </div>
-          <div class="slider">
-              <div class="slider_item">
-                <div class="star">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                 <div class="slide_header">
-                   <h4>AMAZING</h4>
-                 </div>
-                  <div class="content">
-                     I was a bit skeptical to use Anglo Pacific at first due to some bad reviews, but...
-                  </div>
-                  <div class="author">
-                    Long Dong
-                  </div>
-              </div>
 
-              <div class="slider_item">
-                <div class="star">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                 <div class="slide_header">
-                   <h4>AMAZING</h4>
-                 </div>
-                  <div class="content">
-                     I was a bit skeptical to use Anglo Pacific at first due to some bad reviews, but...
-                  </div>
-                  <div class="author">
-                    Long Dong
-                  </div>
-              </div>
+ <%=render 'shared/reviews'%>
 
-                 
-              <div class="slider_item">
-                <div class="star">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                 <div class="slide_header">
-                   <h4>AMAZING</h4>
-                 </div>
-                  <div class="content">
-                     I was a bit skeptical to use Anglo Pacific at first due to some bad reviews, but...
-                  </div>
-                  <div class="author">
-                    Long Dong
-                  </div>
-              </div>
-
-              <div class="slider_item">
-                <div class="star">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                 <div class="slide_header">
-                   <h4>AMAZING</h4>
-                 </div>
-                  <div class="content">
-                     I was a bit skeptical to use Anglo Pacific at first due to some bad reviews, but...
-                  </div>
-                  <div class="author">
-                    Long Dong
-                  </div>
-              </div>
-
-
-              <div class="slider_item">
-                <div class="star">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                 <div class="slide_header">
-                   <h4>AMAZING</h4>
-                 </div>
-                  <div class="content">
-                     I was a bit skeptical to use Anglo Pacific at first due to some bad reviews, but...
-                  </div>
-                  <div class="author">
-                    Long Dong
-                  </div>
-              </div>
-                
-          </div>
-        
-          <div class="text-center">
-             <p>  
-             
-             <button type="button" class="btn btn-warning">Warning</button>
-             </p>
-          </div>
-        
-          </div>
-        </div>
-    
-    </div>
- </section>
 <section class="online">
       <div class="container">
       <div class="row my_padding">
@@ -387,42 +277,7 @@
  </div>
 </section>
 
-<section class="five">
-  <div class="container text-center">
-       <h1 class="big">Get a free online quote <small>in a few easy steps</small></h1>
-    <div class="row big">
-      <div class="col-sm">
-         <h4>What are you moving?</h4> 
-             <div class="form-group">
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-      </div>
-      <div class="col-sm">
-         <h4>Where are you moving to?</h4> 
-            <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                 <option>1</option>
-                 <option>2</option>
-                 <option>3</option>
-                 <option>4</option>
-                 <option>5</option>
-                </select>
-             </div>
-
-      </div>
-      <div class="col-sm">
-       <h4 class="text-white">.</h4>
-       <button type="button" class="btn btn-warning">Get A quote</button>
-      </div>
-    </div>
-  </div>
-</section>
+<%=render 'shared/quote_section'%>
 
 <section class="six">
     <div class="container">
@@ -445,27 +300,5 @@
  </div>
 </section>
 
-<section class="seven">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-         <div class="media">
-  <img class="mr-3" src="https://via.placeholder.com/50x50" alt="Generic placeholder image">
-  <div class="media-body">
-    <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-  </div>
-</div>
-      </div>
-      <div class="col-6">
-         <div class="media">
-  <img class="mr-3" src="https://via.placeholder.com/100x100" alt="Generic placeholder image">
-  <div class="media-body">
-    <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</section>
+<%=render 'shared/news'%>
+

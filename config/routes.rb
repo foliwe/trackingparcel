@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'tracking' => 'shipments#index'
   get 'search' => 'shipments#show'
+  get 'inter' => 'home#inter'
+  get 'baggage' => 'home#baggage'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

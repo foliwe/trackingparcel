@@ -26,7 +26,25 @@
   }
   
 
-  @media (max-width: 800px) {
+  @media (max-width: 400px) {
+
+    .baggage_grid_items{
+      
+      span{
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+    
+      }
+    }
+    
+
+    .baggage_grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: 200px;
+    }
 
     #myCarousel{
       height: 31rem;}
@@ -55,3 +73,4 @@
     
   }
   }
+  
